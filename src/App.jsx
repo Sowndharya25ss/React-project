@@ -1,13 +1,13 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import NavBar from "./Components/NavBar";
-import Home from "./Components/Home";
-import Cart from "./Components/Cart";
-import ProductDetails from "./Components/ProductDetails";
-import PageNotFound from "./Components/PageNotFound";
-import User from "./Components/User"
-import PaginationProvider from "./Components/contexts/PaginationContext";
+import Cart from "./Pages/Cart";
+import ProductDetails from "./Pages/ProductDetails";
+import PageNotFound from "./Pages/PageNotFound";
+import User from "./Pages/User";
 import "./App.css";
+import Home from "./Pages/Home";
+import PaginationProvider from "./contexts/PaginationContext";
 
 function App() {
   return (

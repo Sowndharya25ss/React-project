@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import Products from "./ProductList";
-import Categories from "./Categories";
-import basicOps from "./utility/basicOps";
-import { usePaginationContext } from "./contexts/PaginationContext";
+import Products from "../Components/ProductList";
+import Categories from "../Components/Categories";
+import basicOps from "../utility/basicOps";
+import { usePaginationContext } from "../contexts/PaginationContext";
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -14,8 +14,7 @@ function Home() {
   const [categories, setCategories] = useState([]);
   const [currCategory, setCurrCatergory] = useState("All Categories");
 
-  const {pageNum, pageSize, setPageNum, setPageSize} = usePaginationContext()
-  
+  const { pageNum, pageSize, setPageNum, setPageSize } = usePaginationContext();
 
   useEffect(() => {
     (async function () {
@@ -55,7 +54,7 @@ function Home() {
             value={searchTerm}
             onChange={(i) => {
               setSearchTerm(i.target.value);
-              setPageNum(1)
+              setPageNum(1);
             }}
           />
           <div className="icons_container">
@@ -66,7 +65,7 @@ function Home() {
               }}
               style={{
                 marginRight: "1rem",
-                color: "white",
+                color: "rgb(13, 13, 88)",
                 fontSize: "1.5rem",
               }}
             />
@@ -75,7 +74,7 @@ function Home() {
                 setSortDir(-1);
                 setPageNum(1);
               }}
-              style={{ color: "white", fontSize: "1.5rem" }}
+              style={{ color: "rgb(13, 13, 88)", fontSize: "1.5rem" }}
             />
           </div>
         </div>

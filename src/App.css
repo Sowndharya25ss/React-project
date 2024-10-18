@@ -5,7 +5,7 @@
 }
 
 .nav_wrapper {
-  background-color: black;
+  background-color: rgba(97, 99, 219, 0.267);
   height: 7rem;
 }
 
@@ -23,6 +23,10 @@
 .search_input {
   height: 2rem;
   width: 15rem;
+  background-color: rgb(13, 13, 88);
+  border: 0px;
+  border-radius: 10px;
+  color: white;
 }
 
 /* Categories CSS */
@@ -37,11 +41,12 @@
 }
 
 .category_option {
-  border: 1px solid white;
+  border: 1px solid rgb(13, 13, 88);
   background-color: transparent;
   color: white;
   padding: 0.5rem;
   gap: 1rem;
+  color: rgb(13, 13, 88);
   border-radius: 10px;
 }
 
@@ -66,7 +71,6 @@
   width: calc(
     30% - 35px
   ); /* Responsive width: 4 items per row, adjusts with gap */
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,6 +80,8 @@
   border-radius: 8px;
   box-sizing: border-box;
   height: 17rem;
+  border: 1px solid rgb(13, 13, 88);
+  overflow-y: scroll;
 }
 
 .product_meta {
@@ -85,6 +91,7 @@
 .product_title {
   font-size: 1rem;
   font-weight: bold;
+  color: rgb(13, 13, 88);
 }
 
 .product_price {
@@ -106,6 +113,25 @@
 .navbar {
   height: 3rem;
   display: flex;
-  background-color: white;
+  align-items: center;
+  font-size: large;
   justify-content: space-around;
+  background-color: rgb(79, 79, 229);
+  color: white;
+}
+
+.cart_container {
+  position: relative;
+}
+.cart_qty {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  right: -10px;
+}
+
+.add_to_cart_container {
+  display: flex;
+  align-items: center;
+  
 }
